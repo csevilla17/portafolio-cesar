@@ -3,6 +3,7 @@ import '../Screens/Home.dart';
 import '../Screens/WhatIDo.dart';
 import '../Screens/Secret.dart';
 import '../Screens/Hobbies.dart';
+import '../Screens/Comments.dart';
 
 class AppRoutes {
   static const initialRoute = '/home';
@@ -13,6 +14,7 @@ class AppRoutes {
       '/what_i_do': (BuildContext Context) => const WhatIDo(),
       '/secret': (BuildContext Context) => const Secret(),
       '/hobbies': (BuildContext Context) => const Hobbies(),
+      '/comments': (BuildContext Context) => const Comments(),
     };
   }
 }

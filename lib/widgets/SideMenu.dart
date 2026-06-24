@@ -75,7 +75,9 @@ class SideMenu extends StatelessWidget {
                 ListTile(
                   leading: const Icon(Icons.comment_outlined, color: AppTheme.Acento),
                   title: const Text('Comentarios', style: TextStyle(color: AppTheme.Texto)),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacementNamed(Context, '/comments');
+                  },
                 ),
               ],
             ),
