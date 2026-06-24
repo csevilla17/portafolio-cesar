@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'Screens/Home.dart';
+import 'Routes/AppRoutes.dart';
 import 'Themes/Theme.dart';
 
 void main() => runApp(const PortafolioApp());
@@ -16,10 +16,8 @@ class PortafolioApp extends StatelessWidget {
         scaffoldBackgroundColor: AppTheme.Fondo,
         useMaterial3: true,
       ),
-      initialRoute: '/',
-      routes: {
-        '/': (Context) => const Home(),
-      },
+      initialRoute: AppRoutes.initialRoute,
+      routes: AppRoutes.getRoutes(),
     );
   }
 }

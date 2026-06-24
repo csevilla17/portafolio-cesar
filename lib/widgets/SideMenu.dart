@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import '../Themes/Theme.dart';
-import '../Screens/Secret.dart';
-import '../Screens/WhatIDo.dart';
-import '../Screens/Home.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({super.key});
@@ -58,20 +55,14 @@ class SideMenu extends StatelessWidget {
                   leading: const Icon(Icons.person_outline, color: AppTheme.Acento),
                   title: const Text('Sobre mí', style: TextStyle(color: AppTheme.Texto)),
                   onTap: () {
-                    Navigator.pushReplacement(
-                      Context,
-                      MaterialPageRoute(builder: (Context) => const Home()),
-                    );
+                    Navigator.pushReplacementNamed(Context, '/home');
                   },
                 ),
                 ListTile(
                   leading: const Icon(Icons.work_outline, color: AppTheme.Acento),
                   title: const Text('Qué hago', style: TextStyle(color: AppTheme.Texto)),
                   onTap: () {
-                    Navigator.pushReplacement(
-                      Context,
-                      MaterialPageRoute(builder: (Context) => const WhatIDo()),
-                    );
+                    Navigator.pushReplacementNamed(Context, '/what_i_do');
                   },
                 ),
                 ListTile(
@@ -92,10 +83,7 @@ class SideMenu extends StatelessWidget {
             leading: const Icon(Icons.logout, color: AppTheme.Acento),
             title: const Text('Cerrar sesión', style: TextStyle(color: AppTheme.Texto)),
             onTap: () {
-              Navigator.push(
-                Context,
-                MaterialPageRoute(builder: (Context) => const Secret()),
-              );
+              Navigator.pushNamed(Context, '/secret');
             },
           ),
           const SizedBox(height: 16),
