@@ -68,7 +68,9 @@ class SideMenu extends StatelessWidget {
                 ListTile(
                   leading: const Icon(Icons.star_border, color: AppTheme.Acento),
                   title: const Text('Hobbies', style: TextStyle(color: AppTheme.Texto)),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacementNamed(Context, '/hobbies');
+                  },
                 ),
                 ListTile(
                   leading: const Icon(Icons.comment_outlined, color: AppTheme.Acento),
