@@ -7,8 +7,8 @@ class NavBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext Context) {
     return AppBar(
-      leading: const Icon(Icons.menu, color: AppTheme.Acento),
       backgroundColor: AppTheme.Fondo,
+      iconTheme: const IconThemeData(color: AppTheme.Acento),
       centerTitle: true,
       shape: const Border(
         bottom: BorderSide(color: Colors.white30, width: 1),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../Themes/Theme.dart';
 import '../Widgets/NavBar.dart';
 import '../Widgets/Footer.dart';
+import '../Widgets/SideMenu.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -10,6 +11,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext Context) {
     return Scaffold(
       appBar: const NavBar(),
+      drawer: const SideMenu(),
       body: Column(
         children: [
           Expanded(
