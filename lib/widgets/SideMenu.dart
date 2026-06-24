@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../Themes/Theme.dart';
 import '../Screens/Secret.dart';
+import '../Screens/WhatIDo.dart';
+import '../Screens/Home.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({super.key});
@@ -55,12 +57,22 @@ class SideMenu extends StatelessWidget {
                 ListTile(
                   leading: const Icon(Icons.person_outline, color: AppTheme.Acento),
                   title: const Text('Sobre mí', style: TextStyle(color: AppTheme.Texto)),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacement(
+                      Context,
+                      MaterialPageRoute(builder: (Context) => const Home()),
+                    );
+                  },
                 ),
                 ListTile(
                   leading: const Icon(Icons.work_outline, color: AppTheme.Acento),
                   title: const Text('Qué hago', style: TextStyle(color: AppTheme.Texto)),
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.pushReplacement(
+                      Context,
+                      MaterialPageRoute(builder: (Context) => const WhatIDo()),
+                    );
+                  },
                 ),
                 ListTile(
                   leading: const Icon(Icons.star_border, color: AppTheme.Acento),
