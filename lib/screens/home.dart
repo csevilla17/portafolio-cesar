@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../themes/theme.dart';
+import '../Themes/Theme.dart';
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext Context) {
     return Scaffold(
       body: SafeArea(
         child: Container(
@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
               const Text(
                 'Hola, soy César Sevilla',
                 style: TextStyle(
-                  color: AppTheme.texto,
+                  color: AppTheme.Texto,
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
                 ),
@@ -27,13 +27,13 @@ class HomeScreen extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                 decoration: BoxDecoration(
-                  color: AppTheme.acento,
+                  color: AppTheme.Acento,
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: const Text(
                   'Desarrollador de Software',
                   style: TextStyle(
-                    color: AppTheme.fondo,
+                    color: AppTheme.Fondo,
                     fontSize: 16,
                     fontWeight: FontWeight.w600,
                   ),
